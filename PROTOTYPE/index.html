@@ -11,6 +11,7 @@
 		<div class="heading">
 			<img src="img/SiteLogo.png">
 			
+			<!-- Navigation, with dropdowns -->
 			<div class="navbar">
 			<a href="index.html">Home</a>
 			<div class="dropdown">
@@ -27,10 +28,9 @@
 		</div>
 		<br>
 		<div class="home">
-			<!-- Slideshow container -->
 			<div class="slideshow-container">
 
-			  <!-- Full-width images with number and caption text -->
+			  <!-- Placeholder for the images for the carousel. -->
 			  <div class="mySlides fade">
 				<img src="img/home/slide1.jpg" style="width:100%">
 			  </div>
@@ -52,25 +52,10 @@
 				Here is where a description will be. It will be a relatively long description. Placeholder text follows: The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. 
 			</p>
 		</div>
+		<script src="js/slide.js"></script>
 		<div class="footer">
 			<p>Legal Information & Copyright Info</p>
 		</div>
 	</div>
-	<script>
-		var slideIndex = 0;
-		showSlides();
-
-		function showSlides() {
-		  var i;
-		  var slides = document.getElementsByClassName("mySlides");
-		  for (i = 0; i < slides.length; i++) {
-			slides[i].style.display = "none";
-		  }
-		  slideIndex++;
-		  if (slideIndex > slides.length) {slideIndex = 1}
-		  slides[slideIndex-1].style.display = "block";
-		  setTimeout(showSlides, 10000); // Change image every 2 seconds
-		}
-	</script>
   </body>
 </html>
